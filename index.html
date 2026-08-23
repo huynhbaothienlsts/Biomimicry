@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trang tự học tiếng Việt về 10 nguyên lý Biomimicry và quy trình chuyển chiến lược tự nhiên thành giải pháp thiết kế.">
+  <meta name="theme-color" content="#0c382b">
+  <title>Biomimicry Lab — Học thiết kế từ tự nhiên</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+  <header class="nav"><a class="brand" href="#top"><span class="brandMark">B</span><span>BIOMIMICRY LAB</span></a><nav><a href="#patterns">10 nguyên lý</a><a href="#process">Quy trình</a><a href="#challenge">Thử thách</a></nav><a class="navCta" href="https://asknature.org/" target="_blank" rel="noreferrer">Khám phá AskNature ↗</a></header>
+
+  <section class="hero" id="top"><div class="heroNoise"></div><div class="heroCopy"><p class="eyebrow">PHÒNG THÍ NGHIỆM TỰ HỌC · CÔNG NGHỆ 12</p><h1>Tự nhiên không cho ta<br><em>đáp án.</em> Tự nhiên cho ta<br><span>chiến lược.</span></h1><p class="lead">Học 10 nguyên lý Biomimicry, khám phá cách sự sống giải quyết vấn đề và chuyển hóa bài học đó thành thiết kế phù hợp với con người.</p><div class="heroActions"><a class="primary" href="#patterns">Bắt đầu học</a><a class="textLink" href="#process">Xem cách áp dụng ↓</a></div></div><div class="heroFigure" aria-hidden="true"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="seed"><span>3,8</span><small>tỷ năm<br>R&amp;D</small></div><div class="label l1">THÍCH NGHI</div><div class="label l2">TỐI ƯU</div><div class="label l3">TÁI TẠO</div></div></section>
+
+  <section class="manifesto"><p>Biomimicry là thực hành học hỏi và mô phỏng các chiến lược của tự nhiên để giải quyết thách thức của con người — với mục tiêu tạo ra những giải pháp <strong>phù hợp với sự sống.</strong></p><div class="three"><span><b>Model</b>Tự nhiên là hình mẫu</span><span><b>Measure</b>Tự nhiên là thước đo</span><span><b>Mentor</b>Tự nhiên là người thầy</span></div></section>
+
+  <section class="patterns" id="patterns"><div class="sectionHead"><div><p class="eyebrow dark">BỘ CÔNG CỤ TƯ DUY</p><h2>10 nguyên lý thống nhất<br>của tự nhiên</h2></div><div class="progress"><span id="progressText">0/10 đã học</span><div><i id="progressBar"></i></div></div></div>
+    <div class="controls"><label class="search">⌕<input id="searchInput" placeholder="Tìm nguyên lý, ví dụ, vật liệu…" aria-label="Tìm kiếm nguyên lý"></label><div class="tags" id="tagFilters"></div></div>
+    <div class="patternList" id="patternList"></div>
+  </section>
+
+  <section class="process" id="process"><div class="sectionHead light"><div><p class="eyebrow">TỪ SINH HỌC ĐẾN THIẾT KẾ</p><h2>Đừng sao chép hình dáng.<br>Hãy chuyển giao logic.</h2></div><p class="sideNote">Một thiết kế Biomimicry thuyết phục phải nối được chuỗi: <b>Vấn đề → Chức năng → Chiến lược → Nguyên lý → Giải pháp.</b></p></div><div class="steps" id="steps"></div><div class="askBox"><div><p class="eyebrow">CÁCH TÌM TRÊN ASKNATURE</p><h3>Bắt đầu bằng một câu hỏi chức năng</h3></div><div class="askExamples"><span>How does nature <b>keep cool?</b></span><span>How does nature <b>filter water?</b></span><span>How does nature <b>attach?</b></span></div><a href="https://asknature.org/" target="_blank" rel="noreferrer">Mở AskNature ↗</a></div></section>
+
+  <section class="challenge" id="challenge"><div class="challengeIntro"><p class="eyebrow dark">THỬ THÁCH TỰ HỌC</p><h2>Thiết kế không gian học<br>mát mà không dùng điện.</h2><p>Học từ cơ chế thông gió của tổ mối, nhưng đừng dựng một công trình “trông giống tổ mối”. Hãy giữ lại logic và thích nghi nó với trường học của bạn.</p></div><div class="canvas"><div class="canvasHead"><span>DESIGN BRIEF 01</span><span>30–45 PHÚT</span></div><ol><li><b>Quan sát bối cảnh</b><span>Hướng gió, nắng, độ ẩm, số người, vật liệu địa phương.</span></li><li><b>Viết nguyên lý</b><span>Mô tả logic thông gió bằng 1–2 câu, không nhắc hình dáng tổ mối.</span></li><li><b>Tạo 3 phương án</b><span>Thay đổi cửa hút, cửa thoát, chiều cao và đường đi của không khí.</span></li><li><b>Thêm giới hạn</b><span>Ngân sách giảm 50% hoặc diện tích giảm một nửa.</span></li><li><b>Đánh giá</b><span>Dùng ít nhất 4 trong 10 nguyên lý để phản biện thiết kế.</span></li></ol><button id="printChallenge">In phiếu thử thách</button></div></section>
+
+  <section class="check"><p class="eyebrow dark">TỰ KIỂM TRA</p><h2>Đây có thật sự là Biomimicry?</h2><div class="checkGrid"><div><span>01</span><h3>Có bằng chứng sinh học?</h3><p>Bạn giải thích được cơ chế tự nhiên bằng nguồn đáng tin cậy.</p></div><div><span>02</span><h3>Có chuyển giao chức năng?</h3><p>Giải pháp giữ logic cốt lõi, không chỉ bắt chước hình thức.</p></div><div><span>03</span><h3>Có phù hợp bối cảnh?</h3><p>Người dùng, môi trường, vật liệu, chi phí và an toàn đã được xem xét.</p></div><div><span>04</span><h3>Có phù hợp với sự sống?</h3><p>Giải pháp hướng đến hệ thống bền vững, tuần hoàn và có lợi lâu dài.</p></div></div></section>
+
+  <footer><div><span class="brandMark">B</span><h2>Hãy hỏi tự nhiên.</h2><p>Mỗi thiết kế là một cơ hội để con người học cách sống tốt hơn trên Trái Đất.</p></div><div class="sources"><p class="mini">NGUỒN HỌC TẬP CHÍNH THỨC</p><a href="https://toolbox.biomimicry.org/core-concepts/natures-unifying-patterns/" target="_blank" rel="noreferrer">Biomimicry Toolbox ↗</a><a href="https://asknature.org/" target="_blank" rel="noreferrer">AskNature ↗</a><a href="https://biomimicry.org/" target="_blank" rel="noreferrer">Biomimicry Institute ↗</a><small>Nội dung tiếng Việt được biên soạn phục vụ học tập; nguồn gốc và bản quyền thuộc các tổ chức được dẫn liên kết.</small></div></footer>
+</main>
+<noscript>Trang web cần JavaScript để hiển thị danh sách 10 nguyên lý và lưu tiến độ học tập.</noscript>
+</body>
+</html>

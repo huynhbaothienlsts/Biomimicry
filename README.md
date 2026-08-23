@@ -1,50 +1,27 @@
-# Biomimicry Lab — Học thiết kế từ tự nhiên
+# Biomimicry Lab — bản website tĩnh
 
-Website tự học tiếng Việt dành cho học sinh THPT, giới thiệu 10 nguyên lý Biomimicry, ví dụ sinh học, câu hỏi thiết kế và quy trình chuyển chiến lược tự nhiên thành giải pháp.
+Website tự học tiếng Việt dành cho học sinh THPT. Bản này chạy trực tiếp bằng ba tệp:
 
-## Chức năng
+- `index.html` — nội dung và cấu trúc trang.
+- `styles.css` — toàn bộ thiết kế responsive và bản in.
+- `script.js` — tìm kiếm, bộ lọc, mở rộng nội dung và lưu tiến độ.
 
-- Tra cứu và lọc 10 nguyên lý theo chủ đề.
-- Mở rộng từng nguyên lý để xem ví dụ tự nhiên, gợi ý áp dụng và câu hỏi thiết kế.
-- Đánh dấu tiến độ học; dữ liệu được lưu trên trình duyệt của học sinh.
-- Hướng dẫn quy trình Biomimicry 5 bước và cách tìm kiếm trên AskNature.
-- Phiếu thử thách thiết kế có thể in.
-- Giao diện responsive cho máy tính, máy tính bảng và điện thoại.
+Không cần Node.js, cơ sở dữ liệu hoặc bước build.
 
-## Chạy trên máy
+## Xem trên máy
 
-Yêu cầu Node.js 22.13 trở lên.
+Mở trực tiếp `index.html` bằng Chrome, Edge hoặc Firefox.
 
-```bash
-pnpm install
-pnpm dev
-```
+## Đưa lên GitHub Pages
 
-Kiểm tra bản triển khai:
+1. Tạo repository mới trên GitHub.
+2. Tải `index.html`, `styles.css` và `script.js` lên thư mục gốc của repository.
+3. Vào **Settings → Pages**.
+4. Trong **Build and deployment**, chọn **Deploy from a branch**.
+5. Chọn nhánh `main`, thư mục `/ (root)`, sau đó bấm **Save**.
+6. GitHub sẽ cung cấp địa chỉ dạng `https://ten-tai-khoan.github.io/ten-repository/`.
 
-```bash
-pnpm build
-```
-
-## Đưa mã nguồn lên GitHub
-
-```bash
-git add .
-git commit -m "Create Vietnamese Biomimicry learning site"
-git remote add origin https://github.com/TEN-CUA-BAN/biomimicry-lab.git
-git push -u origin main
-```
-
-## Xuất bản từ GitHub
-
-Dự án sử dụng vinext và tạo ứng dụng Cloudflare Worker. Cách phù hợp nhất là kết nối repository GitHub với Cloudflare Workers/Pages:
-
-1. Trên Cloudflare, chọn **Workers & Pages → Create → Import a repository**.
-2. Chọn repository GitHub vừa tạo.
-3. Build command: `pnpm build`.
-4. Triển khai theo cấu hình Worker do vinext tạo ra.
-
-Nếu chỉ cần lưu trữ mã nguồn, đẩy repository lên GitHub là đủ; website không cần cơ sở dữ liệu hay khóa bí mật.
+Bạn cũng có thể đẩy toàn bộ thư mục này lên GitHub; GitHub Pages sẽ sử dụng `index.html` ở thư mục gốc.
 
 ## Nguồn nội dung
 
