@@ -46,28 +46,6 @@
       <a href="#foundations" class="scroll-cue" aria-label="Cuộn xuống"><span></span>ĐỪNG CHỈ NHÌN. HÃY HỌC CÁCH HỎI.</a>
     </section>
 
-    <section class="section mission-section" id="mission" data-module="mission">
-      <div class="mission-intro reveal">
-        <div><p class="kicker">BIOMIMICRY MISSION · LEARNING JOURNEY</p><h2>Hoàn thành từng nhiệm vụ.<br><em>Mở khóa tư duy thiết kế.</em></h2><p>Mission kết nối trực tiếp với tiến trình trên lớp: quan sát ở Tuần 3, chuyển hóa Biology → Design ở Tuần 4, rồi phát triển vật liệu, moodboard và concept sketch từ Tuần 5–7.</p></div>
-        <div class="mission-map-art" role="img" aria-label="Minh họa hành trình từ chiếc lá đến giải pháp thiết kế"><span class="bio-cell c1">◌</span><span class="bio-cell c2">⌁</span><span class="bio-cell c3">⬡</span><i></i><b>Nature → Design</b></div>
-      </div>
-      <form class="student-profile reveal" id="student-profile">
-        <div><p class="micro">HỒ SƠ HỌC SINH</p><h3>Trước khi bắt đầu Mission</h3><p>Thông tin này được lưu trên thiết bị và tự động đưa vào phiếu học tập, chứng nhận.</p></div>
-        <label><span>Họ và tên</span><input id="student-name" name="name" autocomplete="name" required placeholder="Nguyễn Văn An"></label>
-        <label><span>Lớp</span><input id="student-class" name="className" required placeholder="12A1"></label>
-        <label><span>Nhóm</span><input id="student-group" name="group" required placeholder="Nhóm 03"></label>
-        <button class="button primary" type="submit">Lưu và bắt đầu</button>
-        <p class="profile-status" id="profile-status" role="status"></p>
-      </form>
-      <div class="mission-dashboard reveal">
-        <div class="mission-status"><div><span>MISSION PROGRESS</span><strong id="mission-percent">0%</strong></div><div class="mission-progress"><i id="mission-progress-fill"></i></div><p id="mission-next">Nhiệm vụ đầu tiên đã sẵn sàng.</p></div>
-        <nav class="mission-rail" id="mission-rail" aria-label="Các bước Biomimicry Mission"></nav>
-        <div class="mission-stage" id="mission-stage" aria-live="polite"></div>
-      </div>
-      <div class="mission-actions reveal"><div><p class="micro">MISSION WORKSHEET</p><h3>Phiếu học tập được tạo từ chính câu trả lời của em.</h3><p id="mission-print-notice"><strong>Điều kiện xuất PDF:</strong> hoàn thành toàn bộ 6 Mission. Dữ liệu tự động lưu trên thiết bị.</p></div><button class="button secondary" id="print-mission" type="button" aria-describedby="mission-print-notice">Xuất phiếu PDF</button><button class="text-button danger" id="reset-mission" type="button">Làm lại Mission</button></div>
-      <article class="mission-report" id="mission-report" aria-label="Phiếu học tập Biomimicry Mission"><header><p>BIOMIMICRY MISSION · PHIẾU HỌC TẬP</p><h2>Observe → Function → AskNature → Strategy → Abstract → Design</h2><div><span id="report-student-name"></span><span id="report-student-class"></span><span id="report-student-group"></span></div></header><div id="mission-report-content"></div><footer><p>Nguồn nghiên cứu chính: AskNature.org</p><p>Biomimicry Learning Lab · Công nghệ 12</p></footer></article>
-    </section>
-
     <section class="section foundations" id="foundations" data-module="observe">
       <div class="section-heading reveal"><p class="kicker">01 · DISCOVER</p><h2>Giống tự nhiên chưa chắc là <em>Biomimicry</em>.</h2><p>Chọn nhãn cho từng ví dụ. Điều quyết định không phải hình dáng - mà là cách thiết kế liên hệ với tự nhiên.</p></div>
       <div class="classification-lab reveal">
@@ -137,6 +115,28 @@
     <section class="section evaluate-section" id="evaluate" data-module="evaluate">
       <div class="section-heading reveal"><p class="kicker">07 · EVALUATE</p><h2>Would nature <em>do it this way?</em></h2><p>Đánh giá không phải để “đóng dấu xanh”. Đó là cách tìm ra vòng cải tiến tiếp theo.</p></div>
       <div class="nature-check reveal"><div class="sliders" id="nature-sliders"></div><aside class="score-panel"><p class="micro">BIOMIMICRY SCORE</p><strong id="nature-score">60</strong><span>/ 100</span><div class="score-ring" aria-hidden="true"><i id="score-ring-fill"></i></div><p id="score-feedback"></p></aside></div>
+    </section>
+
+    <section class="section mission-section" id="mission" data-module="mission">
+      <div class="mission-intro reveal">
+        <div><p class="kicker">BIOMIMICRY MISSION · LEARNING JOURNEY</p><h2>Hoàn thành từng nhiệm vụ.<br><em>Mở khóa tư duy thiết kế.</em></h2><p>Mission kết nối trực tiếp với tiến trình trên lớp: quan sát ở Tuần 3, chuyển hóa Biology → Design ở Tuần 4, rồi phát triển vật liệu, moodboard và concept sketch từ Tuần 5–7.</p></div>
+        <div class="mission-map-art" role="img" aria-label="Minh họa hành trình từ chiếc lá đến giải pháp thiết kế"><span class="bio-cell c1">◌</span><span class="bio-cell c2">⌁</span><span class="bio-cell c3">⬡</span><i></i><b>Nature → Design</b></div>
+      </div>
+      <form class="student-profile reveal" id="student-profile">
+        <div><p class="micro">HỒ SƠ HỌC SINH</p><h3>Trước khi bắt đầu Mission</h3><p>Thông tin này được lưu trên thiết bị và tự động đưa vào phiếu học tập, chứng nhận.</p></div>
+        <label><span>Họ và tên</span><input id="student-name" name="name" autocomplete="name" required placeholder="Nguyễn Văn An"></label>
+        <label><span>Lớp</span><input id="student-class" name="className" required placeholder="12A1"></label>
+        <label><span>Nhóm</span><input id="student-group" name="group" required placeholder="Nhóm 03"></label>
+        <button class="button primary" type="submit">Lưu và bắt đầu</button>
+        <p class="profile-status" id="profile-status" role="status"></p>
+      </form>
+      <div class="mission-dashboard reveal">
+        <div class="mission-status"><div><span>MISSION PROGRESS</span><strong id="mission-percent">0%</strong></div><div class="mission-progress"><i id="mission-progress-fill"></i></div><p id="mission-next">Nhiệm vụ đầu tiên đã sẵn sàng.</p></div>
+        <nav class="mission-rail" id="mission-rail" aria-label="Các bước Biomimicry Mission"></nav>
+        <div class="mission-stage" id="mission-stage" aria-live="polite"></div>
+      </div>
+      <div class="mission-actions reveal"><div><p class="micro">MISSION WORKSHEET</p><h3>Phiếu học tập được tạo từ chính câu trả lời của em.</h3><p id="mission-print-notice"><strong>Điều kiện xuất PDF:</strong> hoàn thành toàn bộ 6 Mission. Dữ liệu tự động lưu trên thiết bị.</p></div><button class="button secondary" id="print-mission" type="button" aria-describedby="mission-print-notice">Xuất phiếu PDF</button><button class="text-button danger" id="reset-mission" type="button">Làm lại Mission</button></div>
+      <article class="mission-report" id="mission-report" aria-label="Phiếu học tập Biomimicry Mission"><header><p>BIOMIMICRY MISSION · PHIẾU HỌC TẬP</p><h2>Observe → Function → AskNature → Strategy → Abstract → Design</h2><div><span id="report-student-name"></span><span id="report-student-class"></span><span id="report-student-group"></span></div></header><div id="mission-report-content"></div><footer><p>Nguồn nghiên cứu chính: AskNature.org</p><p>Biomimicry Learning Lab · Công nghệ 12</p></footer></article>
     </section>
 
     <section class="section quiz-section" id="detective" data-module="quiz">
