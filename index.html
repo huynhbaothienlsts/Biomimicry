@@ -2,34 +2,168 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Trang tự học tiếng Việt về 10 nguyên lý Biomimicry và quy trình chuyển chiến lược tự nhiên thành giải pháp thiết kế.">
-  <meta name="theme-color" content="#0c382b">
-  <title>Biomimicry Lab — Học thiết kế từ tự nhiên</title>
-  <link rel="stylesheet" href="styles.css?v=20260824-3">
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Biomimicry Exploration Lab - trải nghiệm học tập tương tác dành cho học sinh THPT.">
+  <meta name="theme-color" content="#163a2b">
+  <title>Biomimicry Exploration Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header class="nav"><a class="brand" href="#top"><span class="brandMark">B</span><span>BIOMIMICRY LAB</span></a><nav><a href="#patterns">10 nguyên lý</a><a href="#process">Quy trình</a><a href="#challenge">Thử thách</a></nav><a class="navCta" href="https://asknature.org/" target="_blank" rel="noreferrer">Khám phá AskNature ↗</a></header>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#welcome" aria-label="Biomimicry Learning Lab - Trang chủ"><span class="brand-mark">⌁</span><span>BIOMIMICRY <b>LAB</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Mở menu</span></button>
+    <nav id="main-nav" aria-label="Điều hướng chính">
+      <a href="#foundations">Khái niệm</a><a href="#patterns">Nguyên lý tự nhiên</a><a href="#cases">Kho tình huống</a><a href="#functions">Khám phá AskNature</a><a href="#challenge">Thử thách thiết kế</a><a href="#mission">Nhiệm vụ</a><a href="#detective">Trắc nghiệm</a><a href="about.html">Giới thiệu</a>
+    </nav>
+    <button class="journey-button" type="button" data-open-progress aria-label="Xem tiến độ học tập"><span>Hành trình</span><b id="header-progress">0%</b></button>
+  </header>
 
-  <section class="hero" id="top"><div class="heroNoise"></div><div class="heroCopy"><p class="eyebrow">PHÒNG THÍ NGHIỆM TỰ HỌC · CÔNG NGHỆ 12</p><h1>Tự nhiên không cho ta<br><em>đáp án.</em> Tự nhiên cho ta<br><span>chiến lược.</span></h1><p class="lead">Học 10 nguyên lý Biomimicry, khám phá cách sự sống giải quyết vấn đề và chuyển hóa bài học đó thành thiết kế phù hợp với con người.</p><div class="heroActions"><a class="primary" href="#patterns">Bắt đầu học</a><a class="textLink" href="#process">Xem cách áp dụng ↓</a></div></div><div class="heroFigure" aria-hidden="true"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="seed"><span>3,8</span><small>tỷ năm<br>R&amp;D</small></div><div class="label l1">THÍCH NGHI</div><div class="label l2">TỐI ƯU</div><div class="label l3">TÁI TẠO</div></div></section>
+  <aside class="progress-drawer" id="progress-drawer" aria-hidden="true" aria-label="Tiến độ Biomimicry">
+    <button class="icon-button close-drawer" aria-label="Đóng bảng tiến độ">×</button>
+    <p class="eyebrow">YOUR BIOMIMICRY JOURNEY</p><h2>Học cách hỏi thiên nhiên</h2>
+    <div class="progress-track"><span id="drawer-progress"></span></div>
+    <ol class="journey-list" id="journey-list"></ol>
+    <div class="badge-zone"><h3>Badge đã mở</h3><div id="badge-list" class="badge-list"></div></div>
+  </aside><div class="drawer-backdrop" hidden></div>
 
-  <section class="manifesto"><p>Biomimicry là thực hành học hỏi và mô phỏng các chiến lược của tự nhiên để giải quyết thách thức của con người — với mục tiêu tạo ra những giải pháp <strong>phù hợp với sự sống.</strong></p><div class="three"><span><b>Model</b>Tự nhiên là hình mẫu</span><span><b>Measure</b>Tự nhiên là thước đo</span><span><b>Mentor</b>Tự nhiên là người thầy</span></div></section>
+  <main id="main">
+    <section class="hero" id="welcome" data-module="discover">
+      <div class="hero-grid"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow light">BIOMIMICRY EXPLORATION LAB · CÔNG NGHỆ 12</p>
+        <h1>BIOMIMICRY</h1><h2>Khi thiên nhiên trở thành <em>nhà thiết kế</em></h2>
+        <p>3,8 tỷ năm thử nghiệm. Hàng triệu chiến lược sinh tồn. Vô số ý tưởng đang chờ chúng ta khám phá.</p>
+        <div class="hero-actions"><a class="button primary" href="#foundations">Bắt đầu khám phá <span>↓</span></a><button class="button ghost" type="button" data-open-progress>Xem hành trình</button></div>
+      </div>
+      <div class="hero-lab reveal" aria-label="Sơ đồ chuyển đổi từ tự nhiên sang thiết kế">
+        <div class="specimen specimen-leaf"><svg viewBox="0 0 300 300" role="img" aria-label="Mạng gân lá cách điệu"><path d="M44 253C45 117 137 45 257 38c-8 124-77 216-213 215Z"/><path d="M45 252 235 58M99 199l-4-84m50 37 18-77m25 27 44 4M104 197l78 8"/></svg></div>
+        <div class="scan-line"></div><p class="lab-label l1">FORM <b>gân phân nhánh</b></p><p class="lab-label l2">FUNCTION <b>phân phối</b></p><p class="lab-label l3">DESIGN <b>mạng lưới hiệu quả</b></p>
+      </div>
+      <a href="#foundations" class="scroll-cue" aria-label="Cuộn xuống"><span></span>ĐỪNG CHỈ NHÌN. HÃY HỌC CÁCH HỎI.</a>
+    </section>
 
-  <section class="patterns" id="patterns"><div class="sectionHead"><div><p class="eyebrow dark">BỘ CÔNG CỤ TƯ DUY</p><h2>10 nguyên lý thống nhất<br>của tự nhiên</h2></div><div class="progress"><span id="progressText">0/10 đã học</span><div><i id="progressBar"></i></div></div></div>
-    <div class="controls"><label class="search">⌕<input id="searchInput" placeholder="Tìm nguyên lý, ví dụ, vật liệu…" aria-label="Tìm kiếm nguyên lý"></label><div class="tags" id="tagFilters"></div></div>
-    <div class="patternList" id="patternList"></div>
-  </section>
+    <section class="section mission-section" id="mission" data-module="mission">
+      <div class="mission-intro reveal">
+        <div><p class="kicker">BIOMIMICRY MISSION · LEARNING JOURNEY</p><h2>Hoàn thành từng nhiệm vụ.<br><em>Mở khóa tư duy thiết kế.</em></h2><p>Mission kết nối trực tiếp với tiến trình trên lớp: quan sát ở Tuần 3, chuyển hóa Biology → Design ở Tuần 4, rồi phát triển vật liệu, moodboard và concept sketch từ Tuần 5–7.</p></div>
+        <div class="mission-map-art" role="img" aria-label="Minh họa hành trình từ chiếc lá đến giải pháp thiết kế"><span class="bio-cell c1">◌</span><span class="bio-cell c2">⌁</span><span class="bio-cell c3">⬡</span><i></i><b>Nature → Design</b></div>
+      </div>
+      <form class="student-profile reveal" id="student-profile">
+        <div><p class="micro">HỒ SƠ HỌC SINH</p><h3>Trước khi bắt đầu Mission</h3><p>Thông tin này được lưu trên thiết bị và tự động đưa vào phiếu học tập, chứng nhận.</p></div>
+        <label><span>Họ và tên</span><input id="student-name" name="name" autocomplete="name" required placeholder="Nguyễn Văn An"></label>
+        <label><span>Lớp</span><input id="student-class" name="className" required placeholder="12A1"></label>
+        <label><span>Nhóm</span><input id="student-group" name="group" required placeholder="Nhóm 03"></label>
+        <button class="button primary" type="submit">Lưu và bắt đầu</button>
+        <p class="profile-status" id="profile-status" role="status"></p>
+      </form>
+      <div class="mission-dashboard reveal">
+        <div class="mission-status"><div><span>MISSION PROGRESS</span><strong id="mission-percent">0%</strong></div><div class="mission-progress"><i id="mission-progress-fill"></i></div><p id="mission-next">Nhiệm vụ đầu tiên đã sẵn sàng.</p></div>
+        <nav class="mission-rail" id="mission-rail" aria-label="Các bước Biomimicry Mission"></nav>
+        <div class="mission-stage" id="mission-stage" aria-live="polite"></div>
+      </div>
+      <div class="mission-actions reveal"><div><p class="micro">MISSION WORKSHEET</p><h3>Phiếu học tập được tạo từ chính câu trả lời của em.</h3><p id="mission-print-notice"><strong>Điều kiện xuất PDF:</strong> hoàn thành toàn bộ 6 Mission. Dữ liệu tự động lưu trên thiết bị.</p></div><button class="button secondary" id="print-mission" type="button" aria-describedby="mission-print-notice">Xuất phiếu PDF</button><button class="text-button danger" id="reset-mission" type="button">Làm lại Mission</button></div>
+      <article class="mission-report" id="mission-report" aria-label="Phiếu học tập Biomimicry Mission"><header><p>BIOMIMICRY MISSION · PHIẾU HỌC TẬP</p><h2>Observe → Function → AskNature → Strategy → Abstract → Design</h2><div><span id="report-student-name"></span><span id="report-student-class"></span><span id="report-student-group"></span></div></header><div id="mission-report-content"></div><footer><p>Nguồn nghiên cứu chính: AskNature.org</p><p>Biomimicry Learning Lab · Công nghệ 12</p></footer></article>
+    </section>
 
-  <section class="process" id="process"><div class="sectionHead light"><div><p class="eyebrow">TỪ SINH HỌC ĐẾN THIẾT KẾ</p><h2>Đừng sao chép hình dáng.<br>Hãy chuyển giao logic.</h2></div><p class="sideNote">Một thiết kế Biomimicry thuyết phục phải nối được chuỗi: <b>Vấn đề → Chức năng → Chiến lược → Nguyên lý → Giải pháp.</b></p></div><div class="steps" id="steps"></div><div class="askBox"><div><p class="eyebrow">CÁCH TÌM TRÊN ASKNATURE</p><h3>Bắt đầu bằng một câu hỏi chức năng</h3></div><div class="askExamples"><span>How does nature <b>keep cool?</b></span><span>How does nature <b>filter water?</b></span><span>How does nature <b>attach?</b></span></div><a href="https://asknature.org/" target="_blank" rel="noreferrer">Mở AskNature ↗</a></div></section>
+    <section class="section foundations" id="foundations" data-module="observe">
+      <div class="section-heading reveal"><p class="kicker">01 · DISCOVER</p><h2>Giống tự nhiên chưa chắc là <em>Biomimicry</em>.</h2><p>Chọn nhãn cho từng ví dụ. Điều quyết định không phải hình dáng - mà là cách thiết kế liên hệ với tự nhiên.</p></div>
+      <div class="classification-lab reveal">
+        <div class="scenario-card" id="scenario-card"><div class="scenario-visual" id="scenario-visual"></div><div><p class="micro" id="scenario-count"></p><h3 id="scenario-title"></h3><p id="scenario-copy"></p></div></div>
+        <div class="classification-options" role="group" aria-label="Chọn loại thiết kế">
+          <button data-classify="biomimicry">Biomimicry<small>học strategy / mechanism</small></button>
+          <button data-classify="bio-inspired">Bio-inspired Design<small>cảm hứng sinh học rộng</small></button>
+          <button data-classify="biomorphism">Biomorphism<small>mượn hình thức tự nhiên</small></button>
+          <button data-classify="bioutilization">Bioutilization<small>dùng trực tiếp sinh vật</small></button>
+        </div>
+        <div class="classification-feedback" id="classification-feedback" aria-live="polite"><span>?</span><p>Quan sát ví dụ rồi chọn một nhãn.</p></div>
+        <button class="text-button" id="next-scenario" type="button">Ví dụ tiếp theo →</button>
+      </div>
+      <div class="translation-strip reveal"><span>Nature</span><i>→</i><span>Function</span><i>→</i><span>Strategy</span><i>→</i><span>Design</span></div>
+      <div class="model-cards reveal" aria-label="Model Measure Mentor">
+        <button class="model-card active" data-model="model"><span>🌿</span><p>01</p><h3>Nature as Model</h3><small>Học cách thiên nhiên giải quyết vấn đề.</small></button>
+        <button class="model-card" data-model="measure"><span>⌁</span><p>02</p><h3>Nature as Measure</h3><small>Dùng nguyên lý tự nhiên để đánh giá.</small></button>
+        <button class="model-card" data-model="mentor"><span>◉</span><p>03</p><h3>Nature as Mentor</h3><small>Xem thiên nhiên là người thầy.</small></button>
+      </div>
+      <div class="model-detail reveal" id="model-detail"><p class="micro">NATURE AS MODEL</p><h3>Chim bói cá không cho ta “hình con chim”. Nó cho ta một chiến lược chuyển tiếp êm giữa hai môi trường.</h3><p>Quan sát cấu trúc → hiểu cơ chế → trừu tượng hóa → thử trong bối cảnh mới.</p></div>
+      <blockquote class="reflection reveal">Chúng ta đang <strong>lấy từ thiên nhiên</strong> hay đang <strong>học từ thiên nhiên</strong>?</blockquote>
+    </section>
 
-  <section class="challenge" id="challenge"><div class="challengeIntro"><p class="eyebrow dark">THỬ THÁCH TỰ HỌC</p><h2>Thiết kế không gian học<br>mát mà không dùng điện.</h2><p>Học từ cơ chế thông gió của tổ mối, nhưng đừng dựng một công trình “trông giống tổ mối”. Hãy giữ lại logic và thích nghi nó với trường học của bạn.</p></div><div class="canvas"><div class="canvasHead"><span>DESIGN BRIEF 01</span><span>30–45 PHÚT</span></div><ol><li><b>Quan sát bối cảnh</b><span>Hướng gió, nắng, độ ẩm, số người, vật liệu địa phương.</span></li><li><b>Viết nguyên lý</b><span>Mô tả logic thông gió bằng 1–2 câu, không nhắc hình dáng tổ mối.</span></li><li><b>Tạo 3 phương án</b><span>Thay đổi cửa hút, cửa thoát, chiều cao và đường đi của không khí.</span></li><li><b>Thêm giới hạn</b><span>Ngân sách giảm 50% hoặc diện tích giảm một nửa.</span></li><li><b>Đánh giá</b><span>Dùng ít nhất 4 trong 10 nguyên lý để phản biện thiết kế.</span></li></ol><button id="printChallenge">In phiếu thử thách</button></div></section>
+    <section class="section patterns-section" id="patterns" data-module="patterns">
+      <div class="section-heading light reveal"><p class="kicker">02 · UNDERSTAND</p><h2>10 design lessons <em>from nature</em></h2><p>Đây không phải 10 công thức. Đó là những xu hướng giúp sự sống vận hành trong giới hạn của Trái Đất.</p></div>
+      <div class="pattern-layout"><div class="pattern-orbit" id="pattern-orbit" aria-label="10 Nature's Unifying Patterns"></div><article class="pattern-inspector" id="pattern-inspector" aria-live="polite"></article></div>
+      <div class="healing-lab reveal">
+        <div><p class="kicker">MICRO EXPLORATION · RESILIENCE</p><h3>Self-healing concrete</h3><p>Ví dụ lai giữa Biomimicry và Bioutilization: học khả năng tự sửa chữa của sinh vật, đồng thời sử dụng vi khuẩn trong vật liệu.</p></div>
+        <div class="healing-flow"><button class="healing-step active" data-heal="0">01 <b>CRACK</b></button><i>→</i><button class="healing-step" data-heal="1">02 <b>BACTERIA ACTIVATED</b></button><i>→</i><button class="healing-step" data-heal="2">03 <b>CaCO₃ FORMS</b></button><i>→</i><button class="healing-step" data-heal="3">04 <b>CRACK FILLED</b></button></div>
+        <div class="concrete-demo" id="concrete-demo"><span class="crack"></span><span class="repair"></span></div>
+      </div>
+      <div class="matching-lab reveal" id="matching-lab">
+        <div class="lab-heading"><div><p class="kicker">CHALLENGE · MATCH</p><h3>Nature ↔ Human Design</h3></div><div class="score-pill">Điểm <b id="match-score">0</b>/8</div></div>
+        <p>Chọn một thẻ Nature, sau đó chọn Design tương ứng. Hoàn thành bằng bàn phím hoặc chuột.</p>
+        <div class="matching-columns"><div><h4>NATURE</h4><div id="nature-options" class="match-options"></div></div><div><h4>HUMAN DESIGN</h4><div id="design-options" class="match-options"></div></div></div>
+        <div class="match-feedback" id="match-feedback" aria-live="polite">Ghép cặp đầu tiên để bắt đầu.</div><button class="button secondary" id="reset-match" type="button">Chơi lại</button>
+      </div>
+    </section>
 
-  <section class="check"><p class="eyebrow dark">TỰ KIỂM TRA</p><h2>Đây có thật sự là Biomimicry?</h2><div class="checkGrid"><div><span>01</span><h3>Có bằng chứng sinh học?</h3><p>Bạn giải thích được cơ chế tự nhiên bằng nguồn đáng tin cậy.</p></div><div><span>02</span><h3>Có chuyển giao chức năng?</h3><p>Giải pháp giữ logic cốt lõi, không chỉ bắt chước hình thức.</p></div><div><span>03</span><h3>Có phù hợp bối cảnh?</h3><p>Người dùng, môi trường, vật liệu, chi phí và an toàn đã được xem xét.</p></div><div><span>04</span><h3>Có phù hợp với sự sống?</h3><p>Giải pháp hướng đến hệ thống bền vững, tuần hoàn và có lợi lâu dài.</p></div></div></section>
+    <section class="section function-section" id="functions" data-module="ask">
+      <div class="section-heading reveal"><p class="kicker">03 · ASK</p><h2>Stop searching for animals.<br><em>Start searching for functions.</em></h2><p>Đừng hỏi “con vật nào giống mái nhà?”. Hãy hỏi “How does nature manage heat?”.</p></div>
+      <div class="function-explorer reveal"><div class="function-grid" id="function-grid"></div><aside id="function-detail"><p class="micro">FUNCTION EXPLORER</p><h3>Chọn một Function</h3><p>Mỗi chức năng có thể được thực hiện bằng nhiều Biological Strategies khác nhau.</p></aside></div>
+      <div class="biologize-lab reveal"><div class="lab-heading"><div><p class="kicker">ACTIVITY · BIOLOGIZE IT</p><h3>Biến vấn đề người thành câu hỏi sinh học</h3></div><span id="bio-progress">1 / 5</span></div><div class="human-challenge"><small>HUMAN CHALLENGE</small><p id="bio-challenge"></p></div><div class="bio-options" id="bio-options"></div><div class="bio-feedback" id="bio-feedback" aria-live="polite"></div><button class="text-button" id="next-bio" type="button">Challenge tiếp theo →</button></div>
+      <div class="asknature-simulator reveal">
+        <div class="search-panel"><p class="kicker">ASKNATURE SEARCH SIMULATOR</p><label for="nature-search">How does nature…</label><div class="search-box"><input id="nature-search" list="function-list" placeholder="cool" autocomplete="off"><button id="search-nature" aria-label="Tìm chiến lược">↗</button></div><datalist id="function-list"></datalist><div class="search-tags" id="search-tags"></div><a href="https://asknature.org/" target="_blank" rel="noopener" class="external-link">Explore on AskNature ↗</a></div>
+        <div class="strategy-results" id="strategy-results" aria-live="polite"></div>
+      </div>
+      <div class="research-steps reveal"><div class="section-heading compact"><p class="kicker">ASKNATURE RESEARCH CHALLENGE</p><h3>Từ Function đến Design Principle</h3></div><ol id="research-steps"></ol></div>
+    </section>
 
-  <footer><div><span class="brandMark">B</span><h2>Hãy hỏi tự nhiên.</h2><p>Mỗi thiết kế là một cơ hội để con người học cách sống tốt hơn trên Trái Đất.</p></div><div class="sources"><p class="mini">NGUỒN HỌC TẬP CHÍNH THỨC</p><a href="https://toolbox.biomimicry.org/core-concepts/natures-unifying-patterns/" target="_blank" rel="noreferrer">Biomimicry Toolbox ↗</a><a href="https://asknature.org/" target="_blank" rel="noreferrer">AskNature ↗</a><a href="https://biomimicry.org/" target="_blank" rel="noreferrer">Biomimicry Institute ↗</a><small>Nội dung tiếng Việt được biên soạn phục vụ học tập; nguồn gốc và bản quyền thuộc các tổ chức được dẫn liên kết.</small></div></footer>
-</main>
-<noscript>Trang web cần JavaScript để hiển thị danh sách 10 nguyên lý và lưu tiến độ học tập.</noscript>
+    <section class="section spiral-section" id="spiral" data-module="abstract">
+      <div class="section-heading reveal"><p class="kicker">04 · ABSTRACT</p><h2>Biomimicry <em>Design Spiral</em></h2><p>Không phải đường thẳng. Khi bằng chứng thay đổi, nhà thiết kế quay lại hỏi, tìm và thử tiếp.</p></div>
+      <div class="spiral-lab reveal"><div class="spiral-visual"><svg viewBox="0 0 520 520" aria-hidden="true"><path d="M260 72c113 0 188 86 188 188 0 113-86 188-188 188-113 0-188-86-188-188 0-91 70-151 151-151 84 0 138 64 138 138 0 72-54 118-118 118-61 0-99-47-99-99 0-49 36-79 79-79 38 0 62 29 62 62 0 29-21 46-46 46"/></svg><div class="spiral-nodes" id="spiral-nodes"></div></div><article id="spiral-detail"></article></div>
+      <div class="path-toggle reveal"><div><p class="kicker">TWO PATHWAYS</p><h3>Đi vào quy trình từ đâu?</h3></div><div class="segmented"><button class="active" data-path="challenge">Challenge → Biology</button><button data-path="biology">Biology → Design</button></div><div id="path-flow" class="path-flow"></div></div>
+    </section>
+
+    <section class="section case-section" id="cases" data-module="discoverCases">
+      <div class="section-heading light reveal"><p class="kicker">05 · DISCOVER</p><h2>Biomimicry <em>Case Lab</em></h2><p>Mở một mẫu vật. Lần theo chuỗi Challenge → Function → Mechanism → Principle → Design.</p></div><div class="case-gallery" id="case-gallery"></div>
+    </section>
+
+    <section class="section challenge-section" id="challenge" data-module="design">
+      <div class="section-heading reveal"><p class="kicker">06 · CREATE</p><h2>Your turn.<br><em>Nature is now your design mentor.</em></h2><p>Chọn một Design Challenge rồi xây dựng lập luận Biomimicry của riêng bạn.</p></div>
+      <div class="challenge-picker reveal" id="challenge-picker"></div>
+      <form class="design-canvas reveal" id="design-canvas"><div class="canvas-head"><div><p class="kicker">BIOMIMICRY DESIGN CANVAS</p><h3 id="canvas-title">Dự án của tôi</h3></div><div><span class="save-status" id="save-status">Tự động lưu</span><button type="button" class="text-button" id="print-canvas">Print / PDF</button><button type="button" class="text-button danger" id="reset-canvas">Reset</button></div></div><div class="canvas-grid" id="canvas-grid"></div></form>
+    </section>
+
+    <section class="section evaluate-section" id="evaluate" data-module="evaluate">
+      <div class="section-heading reveal"><p class="kicker">07 · EVALUATE</p><h2>Would nature <em>do it this way?</em></h2><p>Đánh giá không phải để “đóng dấu xanh”. Đó là cách tìm ra vòng cải tiến tiếp theo.</p></div>
+      <div class="nature-check reveal"><div class="sliders" id="nature-sliders"></div><aside class="score-panel"><p class="micro">BIOMIMICRY SCORE</p><strong id="nature-score">60</strong><span>/ 100</span><div class="score-ring" aria-hidden="true"><i id="score-ring-fill"></i></div><p id="score-feedback"></p></aside></div>
+    </section>
+
+    <section class="section quiz-section" id="detective" data-module="quiz">
+      <div class="section-heading light reveal"><p class="kicker">08 · FINAL CHALLENGE</p><h2>Biomimicry <em>Detective</em></h2><p>Đọc dấu vết chức năng. Tìm cơ chế. Nhận diện nguyên lý.</p></div>
+      <div class="quiz-shell reveal"><div class="quiz-top"><span id="quiz-progress">Câu 1 / 12</span><div class="quiz-bar"><i id="quiz-bar-fill"></i></div><b id="quiz-points">0 điểm</b></div><div id="quiz-stage"></div></div>
+    </section>
+
+    <article class="certificate-print" id="certificate-print" aria-label="Giấy chứng nhận hoàn thành Biomimicry">
+      <img src="assets/images/certificate.png" alt="Mẫu giấy chứng nhận Biomimicry Learning Lab">
+      <strong class="certificate-name" id="certificate-name"></strong><strong class="certificate-class" id="certificate-class"></strong><strong class="certificate-date" id="certificate-date"></strong><strong class="certificate-teacher" id="certificate-teacher"></strong>
+    </article>
+
+    <section class="section resources" id="resources">
+      <div class="section-heading reveal"><p class="kicker">SOURCES & CREDITS</p><h2>Đi xa hơn cùng <em>thiên nhiên</em>.</h2><p>Nội dung được diễn giải và chuyển thành hoạt động học tập; không sao chép dài nguyên văn.</p></div>
+      <div class="resource-grid reveal">
+        <a href="https://biomimicry.org/" target="_blank" rel="noopener"><span>01</span><h3>Biomimicry Institute</h3><p>Khái niệm, giáo dục và đổi mới nature-positive.</p><b>Visit ↗</b></a>
+        <a href="https://asknature.org/" target="_blank" rel="noopener"><span>02</span><h3>AskNature</h3><p>Thư viện Biological Strategies và Innovations.</p><b>Explore ↗</b></a>
+        <a href="https://www.biomimicry.net/" target="_blank" rel="noopener"><span>03</span><h3>Biomimicry 3.8</h3><p>DesignLens, Life’s Principles và Biomimicry Thinking.</p><b>Learn ↗</b></a>
+        <a href="https://toolbox.biomimicry.org/" target="_blank" rel="noopener"><span>04</span><h3>Biomimicry Toolbox</h3><p>Core concepts, Design Spiral và phương pháp ứng dụng.</p><b>Open ↗</b></a>
+      </div>
+      <div class="pdf-credits reveal"><p><strong>Tài liệu lớp học:</strong> <em>NUPs-Examples-PDF-updated.pdf</em> và <em>Toolbox_Natures_Patterns.05122021.pdf</em>, Biomimicry Institute.</p><p>Minh họa trên website là SVG/CSS nguyên bản. Các tên thương hiệu và case study được dùng cho mục đích giáo dục.</p></div>
+    </section>
+  </main>
+
+  <dialog class="case-modal" id="case-modal"><button class="icon-button modal-close" aria-label="Đóng case study">×</button><div id="case-modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer><div><span class="brand-mark">⌁</span><h2>BIOMIMICRY LEARNING LAB</h2><p>Learning from nature to design a better future.</p></div><div><p>Website được xây dựng phục vụ mục đích giáo dục.</p><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
