@@ -39,7 +39,7 @@
 @media(max-width:1050px){.student-profile{grid-template-columns:1fr 1fr}.student-profile>div,.profile-status{grid-column:1/-1}}
 @media(max-width:600px){.student-profile,.certificate-unlock form{grid-template-columns:1fr}.student-profile{padding:1.2rem}.student-profile>div,.profile-status,.certificate-unlock form label:last-of-type,.certificate-unlock form button{grid-column:1}}
 @page certificate{size:297mm 210mm;margin:0}
-.certificate-name{top:50.7%;font-size:clamp(22px,2.7vw,40px)}.certificate-class{top:57.2%;font-size:clamp(18px,2.1vw,31px)}
+.certificate-name{top:46.7%;font-size:clamp(22px,2.7vw,40px)}.certificate-class{top:57.2%;font-size:clamp(18px,2.1vw,31px)}
 @media print{
  @page{size:A4 landscape;margin:0}
  body.printing-certificate>*:not(main){display:none!important}
@@ -48,7 +48,7 @@
  body.printing-certificate{background:#fff}
  body.printing-certificate #certificate-print{page:certificate;break-before:avoid;break-after:avoid}
  body.printing-certificate{width:297mm;height:210mm;margin:0;overflow:hidden}
- body.printing-certificate .certificate-name{font-size:25pt;top:50.5%}
+ body.printing-certificate .certificate-name{font-size:25pt;top:46.5%}
  body.printing-certificate .certificate-class{font-size:20pt;top:57.1%}
  body.printing-certificate .certificate-date{font-size:10pt}
  body.printing-certificate .certificate-teacher{font-size:9.5pt}
