@@ -14,9 +14,11 @@ Khi hoàn thành bài trắc nghiệm với kết quả từ **80% trở lên**,
 biomimicry-self-study/
 ├── index.html
 ├── about.html
+├── materials.html
 ├── style.css
 ├── script.js
 ├── about.js
+├── materials.js
 ├── README.md
 └── assets/
     └── images/
@@ -27,6 +29,8 @@ biomimicry-self-study/
 ```
 
 Website là bản tĩnh, không cần Node.js, backend, database hoặc bước build.
+
+Trang `materials.html` là phòng thí nghiệm học tập Tuần 6 về Vật liệu và Thiết kế. Học sinh hoàn thành Material Card, bản đồ vòng đời, Sustainability Score, Material Translation Canvas, Rapid Sketch, Material Pitch và xuất phiếu PDF.
 
 ## Preview locally
 
